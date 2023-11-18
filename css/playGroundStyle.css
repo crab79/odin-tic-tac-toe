@@ -1,0 +1,124 @@
+body {
+  background-color: #333;
+  font-size: medium;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.scoreBoard {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  gap: 4rem;
+}
+.scoreBoard .player1,
+.scoreBoard .tie,
+.scoreBoard .player2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+}
+.scoreBoard .player1 p,
+.scoreBoard .tie p,
+.scoreBoard .player2 p {
+  font-family: Andika;
+  font-size: 4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: linear-gradient(90deg, #ef5da8 0%, #7879f1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.scoreBoard .player1 .Ellipse,
+.scoreBoard .tie .Ellipse,
+.scoreBoard .player2 .Ellipse {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 4rem;
+  height: 4rem;
+  background: #d9d9d9;
+  border-radius: 9999px;
+}
+.scoreBoard .player1 .Ellipse .score,
+.scoreBoard .tie .Ellipse .score,
+.scoreBoard .player2 .Ellipse .score {
+  font-family: Andika;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: black;
+}
+
+.playBoard {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+}
+.playBoard p {
+  color: #fff;
+  font-family: Andika;
+  font-size: 2.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  text-align: center;
+  margin-top: 0;
+}
+.playBoard p span {
+  background: linear-gradient(90deg, #ef5da8 0%, #7879f1 29.92%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.playBoard .battleField {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  height: 30rem;
+  width: 30rem;
+}
+.playBoard .battleField .gridLine {
+  border: 0.25rem solid #fff;
+  border-radius: 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: inherit;
+}
+.playBoard .battleField .gridLine:nth-child(1) {
+  border-top: 0px;
+  border-left: 0px;
+}
+.playBoard .battleField .gridLine:nth-child(2) {
+  border-top: 0px;
+}
+.playBoard .battleField .gridLine:nth-child(3) {
+  border-top: 0px;
+  border-right: 0px;
+}
+.playBoard .battleField .gridLine:nth-child(4) {
+  border-left: 0px;
+}
+.playBoard .battleField .gridLine:nth-child(6) {
+  border-right: 0px;
+}
+.playBoard .battleField .gridLine:nth-child(7) {
+  border-bottom: 0px;
+  border-left: 0px;
+}
+.playBoard .battleField .gridLine:nth-child(8) {
+  border-bottom: 0px;
+}
+.playBoard .battleField .gridLine:nth-child(9) {
+  border-bottom: 0px;
+  border-right: 0px;
+}
+
+/*# sourceMappingURL=playGroundStyle.css.map */
