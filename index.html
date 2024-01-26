@@ -16,17 +16,17 @@
 <body>
     <h1>TIC TAC TOE</h1>
     <div class="chooseBox">
-        <p>Player1 WANT TO PICK... </p>
+        <p><span id="player">Player1</span> WANT TO PICK... </p>
         <div class="choise">
-            <button type="submit" id="x">
+            <button type="button" id="x" onclick="selectOption('X')">
                 <img src="img/x.svg" alt="buttonX" />
             </button>
             <p>OR</p>
-            <button type="submit" id="o">
+            <button type="button" id="o" onclick="selectOption('O')">
                 <img src="img/o.svg" alt="buttonO" />
             </button>
         </div>
     </div>
 </body>
-
+<script src="index.js"></script>
 </html>
