@@ -90,7 +90,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: inherit;
+}
+.playBoard .battleField .gridLine:hover {
+  background-size: 9rem;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .playBoard .battleField .gridLine:nth-child(1) {
   border-top: 0px;

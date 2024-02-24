@@ -88,7 +88,12 @@ body {
             display: flex;
             justify-content: center;
             align-items: center;
-            background-color: inherit;
+            &:hover{
+                //background-image: url('/img/o.svg');
+                background-size: 9rem;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
         }
         .gridLine:nth-child(1) {
             border-top: 0px;

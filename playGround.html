@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="scoreBoard">
+    <!--<div class="scoreBoard">
         <div class="player1">
             <p>Player1</p>
             <div class="Ellipse">
@@ -34,31 +34,32 @@
             </div>
         </div>
     </div>
+    -->
     <div class="playBoard">
-        <p><span>Player1</span>'s turn...</p>
+        <p><span id="player">Player1</span>'s turn...</p>
         <div class="battleField">
-            <div class="gridLine">
+            <div class="gridLine" id="1" onclick="mark('1')">
             </div>
-            <div class="gridLine">
+            <div class="gridLine" id="2" onclick="mark('2')">
             </div>
-            <div class="gridLine">
+            <div class="gridLine" id="3" onclick="mark('3')">
             </div>
-            <div class="gridLine">
+            <div class="gridLine" id="4" onclick="mark('4')">
             </div>
-            <div class="gridLine">
+            <div class="gridLine" id="5" onclick="mark('5')">
             </div>
-            <div class="gridLine">
+            <div class="gridLine" id="6" onclick="mark('6')">
             </div>
-            <div class="gridLine">
+            <div class="gridLine" id="7" onclick="mark('7')">
             </div>
-            <div class="gridLine">
+            <div class="gridLine" id="8" onclick="mark('8')">
 
             </div>
-            <div class="gridLine">
+            <div class="gridLine" id="9" onclick="mark('9')">
 
             </div>
         </div>
     </div>
 </body>
-
+<script src="js/playGround.js"></script>
 </html>
