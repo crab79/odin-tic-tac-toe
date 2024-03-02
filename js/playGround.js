@@ -28,11 +28,11 @@ function addSymbolEventListeners() {
             // Code to execute when the mouse enters the element
             if (playerNow.textContent === "Player1") {
                 if(symbols[i].clicked != true){
-                    symbols[i].style.backgroundImage = `url('..img/${player1.choice}.svg')`;
+                    symbols[i].style.backgroundImage = `url('img/${player1.choice}.svg')`;
                 }
             } else if (playerNow.textContent === "Player2") {
                 if(symbols[i].clicked != true){
-                    symbols[i].style.backgroundImage = `url('..img/${player2.choice}.svg')`;
+                    symbols[i].style.backgroundImage = `url('img/${player2.choice}.svg')`;
                 }
             }
         });
@@ -47,11 +47,11 @@ function addSymbolEventListeners() {
         symbols[i].addEventListener('click', function () {
             // Code to execute when the mouse enters the element
             if (playerNow.textContent === "Player1") {
-                symbols[i].style.backgroundImage = `url('..img/${player1.choice}.svg')`;
+                symbols[i].style.backgroundImage = `url('img/${player1.choice}.svg')`;
                 playerNow.textContent = "Player2";
                 symbols[i].clicked = true;
             } else if (playerNow.textContent === "Player2") {
-                symbols[i].style.backgroundImage = `url('..img/${player2.choice}.svg')`;
+                symbols[i].style.backgroundImage = `url('img/${player2.choice}.svg')`;
                 checkWinner(playerNow.textContent);
                 playerNow.textContent = "Player1";
                 symbols[i].clicked = true;
